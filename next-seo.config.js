@@ -1,4 +1,4 @@
-const title = "Michael Boland – Developer, writer, creator.";
+const title = "Michael Boland";
 const description =
   "Front-end developer, JavaScript enthusiast, and course creator.";
 
@@ -20,11 +20,6 @@ const SEO = {
         height: 720,
       },
     ],
-  },
-  twitter: {
-    handle: "@miboland",
-    site: "@miboland",
-    cardType: "summary_large_image",
   },
 };
 

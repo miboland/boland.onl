@@ -35,7 +35,7 @@ const Index = () => {
           maxWidth="700px"
         >
           <Heading letterSpacing="tight" mb={2} as="h1" size="2xl">
-            Hey, I’m Lee Robinson
+            Hey, I’m Michael Boland
           </Heading>
           <Text color={secondaryTextColor[colorMode]}>
             I’m a developer, writer, and creator living in Des Moines, IA.
