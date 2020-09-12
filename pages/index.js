@@ -39,8 +39,6 @@ const Index = () => {
           </Heading>
           <Text color={secondaryTextColor[colorMode]}>
             I’m a developer, writer, and creator living in Des Moines, IA.
-            You’ve found my personal slice of the internet – everything you want
-            to know and more is here.
           </Text>
         </Flex>
         <Flex

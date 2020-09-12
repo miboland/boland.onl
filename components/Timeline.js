@@ -51,14 +51,35 @@ const FullTimeline = () => (
       2018
     </Heading>
     <List>
-      <TimelineStep title="Started dsmtech.io 🤘🏻">
-        Reflecting on my recent job search, I realized there wasn't a
-        centralized listing of all the Des Moines tech companies. So...I created
-        it.
+      <TimelineStep title="Joined Fastpath">
+        Left the consulting life at Capgemini to help Fastpath build an
+        impressive SAAS product.
       </TimelineStep>
-      <TimelineStep title="Joined Hy-Vee 🛒">
-        It was time for a change in my career, and Hy-Vee came calling. The best
-        part was reducing my commute time by an hour/day.
+      <TimelineStep title="Co-Founded a Research Center">
+        Began development on the David Bohm Center for Dialogue in partnership
+        with Arizona State University.
+      </TimelineStep>
+      <TimelineStep title="Moved to Des Moines 🌆">
+        Moved home from Europe to start a full-time position at Capgemini as a
+        web consultant.
+      </TimelineStep>
+    </List>
+    <YearDivider />
+    <Heading as="h3" size="lg" fontWeight="bold" mb={4} letterSpacing="tighter">
+      2017
+    </Heading>
+    <List>
+      <TimelineStep title="Became an Entrepreneur in Residence">
+        Moved to the Balkan Peninsula to consult with companies and universities
+        developing digital products.
+      </TimelineStep>
+      <TimelineStep title="Graduated Grad School 🍻">
+        Completed my dissertation on higher education alternatives, technology
+        vocations, and the future of communities.
+      </TimelineStep>
+      <TimelineStep title="Moved to Portugal 🇵🇹">
+        Moved from Brighton to Porto to complete my dissertation at The New
+        Digital School.
       </TimelineStep>
     </List>
     <YearDivider />
@@ -66,21 +87,17 @@ const FullTimeline = () => (
       2016
     </Heading>
     <List>
-      <TimelineStep title="Graduated College 🎓">
-        One of my most cherished accomplishments. I worked my ass off to get
-        this degree.
+      <TimelineStep title="Committed Fully to Javascript">
+        Decided to go all in on Javascript, sparked while competing at the
+        Blocksmith's blockchain hackathon.
       </TimelineStep>
-      <TimelineStep title="Family Roadtrip 🚗">
-        To celebrate graduating, my family and I did a road trip down the
-        Pacific Coast Highway in California. An unforgettable experience.
+      <TimelineStep title="Started Digital Melon">
+        Started a digital studio, providing UX and web development services to
+        clients in the U.K. and Western Europe.
       </TimelineStep>
-      <TimelineStep title="Full-Time at Workiva">
-        I was offered and accepted a full-time offer with Workiva, as well as
-        the opportunity to continue my internship until graduation.
-      </TimelineStep>
-      <TimelineStep title="Moved to Des Moines 🏙">
-        I moved Downtown DSM into a quaint 1BR apartment. Des Moines has always
-        felt like home growing up ~45 minutes away.
+      <TimelineStep title="Moved to England 🏴󠁧󠁢󠁥󠁮󠁧󠁿">
+        Moved to Brighton, England to pursue a Master's degree in Applied
+        Psychology with a focus on disruptive technology.
       </TimelineStep>
     </List>
     <YearDivider />
@@ -88,82 +105,14 @@ const FullTimeline = () => (
       2015
     </Heading>
     <List>
-      <TimelineStep title="Started at Workiva 🔥">
-        This internship meant a lot to me. Being able to work part-time while
-        still getting my school work done was huge.
+      <TimelineStep title="Backpacked Central America">
+        Spent the summer traveling and hiking throughout Mexico, Belize, and
+        Guatemala.
       </TimelineStep>
-      <TimelineStep title="Started Tutoring Programming">
-        Why not make a little extra money and sharpen my skills? I taught Python
-        to ISU Freshman.
+      <TimelineStep title="Graduated College 🎓">
+        With the intentions of pursuing a PhD in psychology or anthropology.
+        Then life happened.
       </TimelineStep>
-      <TimelineStep title="Second Internship">
-        Spent the summer in (beautiful?) Cedar Rapids, IA working at Rockwell
-        Collins.
-      </TimelineStep>
-    </List>
-    <YearDivider />
-    <Heading as="h3" size="lg" fontWeight="bold" mb={4} letterSpacing="tighter">
-      2014
-    </Heading>
-    <List>
-      <TimelineStep title="Took a Semester Off">
-        I opted to stay at my internship full-time throughout the fall.
-      </TimelineStep>
-      <TimelineStep title="Landed First Internship">
-        Finally felt like I understood this whole programming thing. My
-        interviewing skills weren't great, but I managed to snag my first
-        internship.
-      </TimelineStep>
-    </List>
-    <YearDivider />
-    <Heading as="h3" size="lg" fontWeight="bold" mb={4} letterSpacing="tighter">
-      2011
-    </Heading>
-    <List>
-      <TimelineStep title="Graduated High School">
-        My hometown had about 1000 people, in total. My graduating class was 36.
-      </TimelineStep>
-      <TimelineStep title="Started at Iowa State University 🌪❤️">
-        I've been a die-hard Cyclone fan my whole life. It was a no-brainer that
-        I was going to ISU, especially since they have a great Engineering
-        program.
-      </TimelineStep>
-      <TimelineStep title="Learned How To Program">
-        CS 101. Our professor asked a simple question - "Who here has prior
-        programming experience?". About 80% of the class raised their hands. I
-        knew it was going to be an uphill battle from here.
-      </TimelineStep>
-      <TimelineStep title="Wanted To Dropout of College">
-        I didn't pick up programming right away. It didn't help we learned C to
-        start – I'm glad I stuck with it, though.
-      </TimelineStep>
-    </List>
-    <YearDivider />
-    <Heading as="h3" size="lg" fontWeight="bold" mb={4} letterSpacing="tighter">
-      1998
-    </Heading>
-    <List>
-      <TimelineStep title="First Computer">
-        I remember many nights playing Age of Empires, Lego Island, and
-        Runescape.
-      </TimelineStep>
-    </List>
-    <YearDivider />
-    <Heading as="h3" size="lg" fontWeight="bold" mb={4} letterSpacing="tighter">
-      1997
-    </Heading>
-    <List>
-      <TimelineStep title="Became a Pokémon Master">
-        Every time we'd go to Target, I would beg my mom to get a pack of
-        Pokémon cards. Sorry, mom.
-      </TimelineStep>
-    </List>
-    <YearDivider />
-    <Heading as="h3" size="lg" fontWeight="bold" mb={4} letterSpacing="tighter">
-      1993
-    </Heading>
-    <List>
-      <TimelineStep title="Born 👶🏼🍼" />
     </List>
   </>
 );
@@ -180,7 +129,7 @@ const Timeline = () => {
       mt={8}
     >
       <Heading letterSpacing="tight" mb={4} size="xl" fontWeight="bold">
-        Timeline
+        Recent Timeline
       </Heading>
       <Heading
         as="h3"
@@ -192,20 +141,17 @@ const Timeline = () => {
         2020
       </Heading>
       <List>
-        <TimelineStep title="Launched React 2025 💯">
-          Building a real SaaS application, from zero to production.
+        <TimelineStep title="Joined Hy-Vee">
+          Joined Hy-Vee as a full-stack software engineer to work with the web
+          and mobile teams on the Aisles Online e-commerce app.
         </TimelineStep>
-        <TimelineStep title="Emerging Technology Leader of the Year 🏆">
-          I was extremely honored to be one of five finalists nominated for this
-          award at the 2020 Prometheus Awards.
+        <TimelineStep title="Got engaged 💍">
+          Figured again, Covid, the time warp, global chaos. There was no better
+          time to ask my partner-in-crime, Melanie, to marry me.
         </TimelineStep>
-        <TimelineStep title="Became a Tech Lead 👨🏻‍💻">
-          Starting at the beginning of this year, I moved into a tech leadership
-          role on one of our e-commerce development teams.
-        </TimelineStep>
-        <TimelineStep title="Mastering Next.js made $10K 📈">
-          I taught hundreds of students from all over the world how to build web
-          applications. Exceeded my wildest expectations.
+        <TimelineStep title="Got a Puppy 🐶">
+          Figured a dog would be nice. Covid, remote work, what even is time?
+          Everything is a blur.
         </TimelineStep>
       </List>
       <YearDivider />
@@ -219,26 +165,17 @@ const Timeline = () => {
         2019
       </Heading>
       <List>
-        <TimelineStep title="Software Engineer III ✨">
-          Lead our design system architecture, building new components with
-          React, Storybook, and styled-components.
+        <TimelineStep title="Joined Mogul e-Sports 🕹️">
+          Worked with the talented start-up team at Mogul out of Australia to
+          create the future of online e-sports tournaments.
         </TimelineStep>
-        <TimelineStep title="Mastering Next.js ⚛️">
-          Launched a 50+ lesson video course for building apps with Next.js and
-          React.
+        <TimelineStep title="Spoke at Reactor Innovation Hub 🎤">
+          Spoke to entrepreneurs, freelancers, and creatives about the need to
+          foster healthy communication, trust, and more humanity in tech.
         </TimelineStep>
-        <TimelineStep title="Bought a Townhome 🏡">
-          Who wants to do yardwork? Not me. Plus, Allie and I love living
-          downtown Des Moines.
-        </TimelineStep>
-        <TimelineStep title="Got Engaged 💍">
-          I asked my now fiancée, Allie, to marry me. She said yes! It was a
-          busy month, to say the least. I also spoke at three events and sold my
-          condo.
-        </TimelineStep>
-        <TimelineStep title="Spoke at Talent42 🎤">
-          I spoke to over 100 technical recruiting leaders from across the
-          country at Talent42 in Seattle during a 45-minute keynote.
+        <TimelineStep title="Revisited Portugal 🛫">
+          Returned to Portugal to help some close friends build a human-centered
+          design agency called The Human Toolbox.
         </TimelineStep>
       </List>
       {isShowingFullTimeline ? (
