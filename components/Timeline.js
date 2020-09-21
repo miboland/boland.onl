@@ -110,8 +110,8 @@ const FullTimeline = () => (
         Guatemala.
       </TimelineStep>
       <TimelineStep title="Graduated College 🎓">
-        With the intentions of pursuing a PhD in psychology or anthropology.
-        Then life happened.
+        Intended to pursue a PhD in psychology or anthropology. Then life
+        happened.
       </TimelineStep>
     </List>
   </>
@@ -149,7 +149,7 @@ const Timeline = () => {
           Figured again, Covid, the time warp, global chaos. There was no better
           time to ask my partner-in-crime, Melanie, to marry me.
         </TimelineStep>
-        <TimelineStep title="Got a Puppy 🐶">
+        <TimelineStep title="Brought home a Puppy 🐶">
           Figured a dog would be nice. Covid, remote work, what even is time?
           Everything is a blur.
         </TimelineStep>
