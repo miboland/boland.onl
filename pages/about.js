@@ -108,10 +108,10 @@ const About = () => {
             <Text color={secondaryTextColor[colorMode]} mb={8}>
               During this workshop, I facilitated group work focused on the
               side-effects of unethical and unhealthy design systems, a lack of
-              trust and comradery in company cultures, and practical baby steps
-              that can be taken to build trust networks and organic communities
-              with colleagues and co-workers in the workplace and the greater
-              industry.
+              trust and comradery in company cultures, and small, practical
+              steps that can be taken to build trust networks and organic
+              communities with colleagues and co-workers in the workplace and
+              the greater industry.
             </Text>
             <Heading size="md" as="h3" mb={2} fontWeight="medium">
               {/* <Link
