@@ -10,8 +10,8 @@
   },
   "redirects": [
     {
-      "source": "/MichaelBoland.pdf",
-      "destination": "/boland-resume-2020.pdf"
+      "source": "/resume",
+      "destination": "/resume.pdf"
     },
     {
       "source": "/projects",

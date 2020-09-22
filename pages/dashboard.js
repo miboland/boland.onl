@@ -18,8 +18,8 @@ import Unsplash from "../components/metrics/Unsplash";
 import YouTube from "../components/metrics/Youtube";
 import { CustomLink } from "../components/MDXComponents";
 
-const url = "https://leerob.io/dashboard";
-const title = "Dashboard – Lee Robinson";
+const url = "https://boland.onl/dashboard";
+const title = "Dashboard – Michael Boland";
 const description =
   "My personal dashboard, built with Next.js API routes deployed as serverless functions.";
 
@@ -42,7 +42,7 @@ const Dashboard = () => {
           description,
           images: [
             {
-              url: "https://leerob.io/static/images/dashboard.jpg",
+              url: "https://boland.onl/static/images/dashboard.jpg",
               alt: description,
               width: 1280,
               height: 720,

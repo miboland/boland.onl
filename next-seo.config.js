@@ -1,6 +1,5 @@
 const title = "Michael Boland";
-const description =
-  "Front-end developer, JavaScript enthusiast, and course creator.";
+const description = "Full-stack developer, JavaScript enthusiast, and creator.";
 
 const SEO = {
   title,
