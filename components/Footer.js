@@ -13,7 +13,7 @@ const Footer = () => (
       />
     </Link>
     <Link
-      href="https://www.linkedin.com/in/miboland-/"
+      href="https://www.linkedin.com/in/miboland-"
       title="LinkedIn"
       isExternal
     >

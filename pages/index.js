@@ -3,13 +3,13 @@ import { useColorMode, Heading, Text, Flex, Stack } from "@chakra-ui/core";
 
 import Timeline from "../components/Timeline";
 import Container from "../components/Container";
-import BlogPost from "../components/BlogPost";
-import Subscribe from "../components/Subscribe";
+// import BlogPost from "../components/BlogPost";
+// import Subscribe from "../components/Subscribe";
 import ProjectCard from "../components/ProjectCard";
 
-import { frontMatter as styleGuides } from "./blog/style-guides-component-libraries-design-systems.mdx";
-import { frontMatter as stripeDesign } from "./blog/how-stripe-designs-beautiful-websites.mdx";
-import { frontMatter as monorepo } from "./blog/monorepo-lerna-yarn-workspaces.mdx";
+// import { frontMatter as styleGuides } from "./blog/style-guides-component-libraries-design-systems.mdx";
+// import { frontMatter as stripeDesign } from "./blog/how-stripe-designs-beautiful-websites.mdx";
+// import { frontMatter as monorepo } from "./blog/monorepo-lerna-yarn-workspaces.mdx";
 
 const Index = () => {
   const { colorMode } = useColorMode();
@@ -41,7 +41,7 @@ const Index = () => {
             I’m a developer, writer, and creator living in Des Moines, IA.
           </Text>
         </Flex>
-        <Flex
+        {/* <Flex
           flexDirection="column"
           justifyContent="flex-start"
           alignItems="flex-start"
@@ -54,7 +54,7 @@ const Index = () => {
           <BlogPost {...styleGuides} />
           <BlogPost {...stripeDesign} />
           <BlogPost {...monorepo} />
-        </Flex>
+        </Flex> */}
         <Flex
           flexDirection="column"
           justifyContent="flex-start"
@@ -65,26 +65,26 @@ const Index = () => {
             Projects
           </Heading>
           <ProjectCard
-            title="React 2025"
-            description="Build and deploy a modern Jamstack application using the most popular open-source software."
-            href="https://react2025.com/"
-            icon="react2025"
+            title="DSM Salary"
+            description="Easily view the salary ranges of companies and start-ups throughout the Des Moines metro area."
+            href="https://dsmsalary.onl/"
+            icon=""
           />
-          <ProjectCard
-            title="Mastering Next.js"
-            description="A free video course for building static and server-side rendered applications with Next.js and React."
-            href="https://masteringnextjs.com/"
-            icon="nextjs"
-          />
-          <ProjectCard
+          {/* <ProjectCard
             title="jamstackfns"
             description="The best serverless functions for JAMstack applications. Deploy to Vercel or Netlify for your static site."
             href="https://jamstackfns.com/"
             icon="jamstackfns"
+          /> */}
+          <ProjectCard
+            title="Krishnamurti Center"
+            description="A platform to read the collected life works, biographies, and personal writings of Jiddu Krishnamurti."
+            href="https://krishnamurti.center/"
+            icon=""
           />
         </Flex>
         <Timeline />
-        <Subscribe />
+        {/* <Subscribe /> */}
       </Stack>
     </Container>
   );

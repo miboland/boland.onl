@@ -21,10 +21,9 @@ import { frontMatter as styleGuides } from "./blog/style-guides-component-librar
 import { frontMatter as stripeDesign } from "./blog/how-stripe-designs-beautiful-websites.mdx";
 import { frontMatter as monorepo } from "./blog/monorepo-lerna-yarn-workspaces.mdx";
 
-const url = "https://leerob.io/blog";
-const title = "Blog – Lee Robinson";
-const description =
-  "Thoughts on the software industry, programming, tech, videography, music, and my personal life.";
+const url = "https://boland.onl/blog";
+const title = "Blog – Michael Boland";
+const description = "Thoughts, notes, and conundrums.";
 
 const Blog = () => {
   const [searchValue, setSearchValue] = useState("");
@@ -74,8 +73,7 @@ const Blog = () => {
               Blog
             </Heading>
             <Text color={secondaryTextColor[colorMode]}>
-              {`I've been writing online since 2014, mostly about web development and tech careers.
-                In total, I've written ${blogPosts.length} articles on this site.
+              {`In total, I've written ${blogPosts.length} articles on this site.
                 Use the search below to filter by title.`}
             </Text>
             <InputGroup my={4} mr={4} w="100%">

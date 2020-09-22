@@ -50,11 +50,11 @@ const Container = ({ children }) => {
           onClick={toggleColorMode}
         />
         <Box>
-          <NextLink href="/dashboard" passHref>
+          {/* <NextLink href="/dashboard" passHref>
             <Button as="a" variant="ghost" p={[1, 4]}>
               Dashboard
             </Button>
-          </NextLink>
+          </NextLink> */}
           <NextLink href="/blog" passHref>
             <Button as="a" variant="ghost" p={[1, 4]}>
               Blog

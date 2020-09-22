@@ -17,11 +17,7 @@ import ViewCounter from "../components/ViewCounter";
 import BlogSeo from "../components/BlogSeo";
 
 const editUrl = (slug) =>
-  `https://github.com/leerob/leerob.io/edit/master/pages/blog/${slug}.mdx`;
-const discussUrl = (slug) =>
-  `https://mobile.twitter.com/search?q=${encodeURIComponent(
-    `https://leerob.io/blog/${slug}`
-  )}`;
+  `https://github.com/miboland/boland.onl/edit/master/pages/blog/${slug}.mdx`;
 
 export default (frontMatter) => {
   const slug = frontMatter.__resourcePath
@@ -37,7 +33,7 @@ export default (frontMatter) => {
 
     return (
       <Container>
-        <BlogSeo url={`https://leerob.io/blog/${slug}`} {...frontMatter} />
+        <BlogSeo url={`https://boland.onl/blog/${slug}`} {...frontMatter} />
         <Stack
           as="article"
           spacing={8}
@@ -66,15 +62,10 @@ export default (frontMatter) => {
               mb={4}
             >
               <Flex align="center">
-                <Avatar
-                  size="xs"
-                  name="Lee Robinson"
-                  src="https://bit.ly/33vEjhB"
-                  mr={2}
-                />
+                <Avatar size="xs" name="Michael Boland" src="" mr={2} />
                 <Text fontSize="sm" color={textColor[colorMode]}>
                   {frontMatter.by}
-                  {"Lee Robinson / "}
+                  {"Michael Boland / "}
                   {format(parseISO(frontMatter.publishedAt), "MMMM dd, yyyy")}
                 </Text>
               </Flex>
@@ -88,10 +79,10 @@ export default (frontMatter) => {
           {children}
           <Subscribe />
           <Box>
-            <Link href={discussUrl(slug)} isExternal>
+            {/* <Link href={discussUrl(slug)} isExternal>
               {"Discuss on Twitter"}
             </Link>
-            {` • `}
+            {` • `} */}
             <Link href={editUrl(slug)} isExternal>
               {"Edit on GitHub"}
             </Link>
