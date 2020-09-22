@@ -70,12 +70,10 @@ const Dashboard = () => {
             </Heading>
             <Text color={secondaryTextColor[colorMode]}>
               This is my personal dashboard, built with Next.js API routes
-              deployed as serverless functions. I use this dashboard to track
-              various metrics across platforms like Unsplash, YouTube, GitHub,
-              and more. Want to build your own? Check out my&nbsp;
-              <CustomLink href="/blog/fetching-data-with-swr">
-                blog series.
-              </CustomLink>
+              deployed as serverless functions.
+            </Text>
+            <Text color={secondaryTextColor[colorMode]}>
+              I use this dashboard to track various metrics across platforms.
             </Text>
           </Flex>
           <Flex
@@ -85,15 +83,15 @@ const Dashboard = () => {
             maxWidth="700px"
             mt={8}
           >
-            <Unsplash />
-            <YouTube />
+            {/* <Unsplash />
+            <YouTube /> */}
             <SimpleGrid columns={[1, 1, 2]} spacing={4} mb={4}>
               <Analytics />
               <GitHub />
             </SimpleGrid>
             <SimpleGrid columns={[1, 1, 2]} spacing={4} mb={4}>
-              <Gumroad />
-              <Buttondown />
+              {/* <Gumroad />
+              <Buttondown /> */}
             </SimpleGrid>
           </Flex>
         </Stack>

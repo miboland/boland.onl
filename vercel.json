@@ -12,18 +12,6 @@
     {
       "source": "/resume",
       "destination": "/resume.pdf"
-    },
-    {
-      "source": "/projects",
-      "destination": "/about"
-    },
-    {
-      "source": "/blog/now-env-variables-size-limit",
-      "destination": "/blog/vercel-env-variables-size-limit"
-    },
-    {
-      "source": "/blog/going-serverless-next-firebase-now",
-      "destination": "/blog/nextjs-firebase-serverless"
     }
   ],
   "headers": [

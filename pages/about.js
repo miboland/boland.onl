@@ -147,7 +147,7 @@ const About = () => {
                 isExternal
               > */}
               <Flex align="center">
-                Internal Training & Furthering Education
+                Facilitation & Continuing Community Education
                 {/* <Icon name="external-link" mx={2} size="16px" /> */}
               </Flex>
               {/* </Link> */}
@@ -160,12 +160,12 @@ const About = () => {
               &nbsp;&nbsp;| 2017
             </Text>
             <Text color={secondaryTextColor[colorMode]} mb={8}>
-              This talk covered methods in which companies and incubators can
-              further train staff to facilitate the development start-up
-              ecosystems, accelerate successful launches and growth rates, and
-              empower the broader community with technology workshops,
-              code-alongs, educational experiences, and industry leader keynotes
-              and mentorship.
+              This talk covered methods in which accelerators and incubators can
+              further enable staff to facilitate the development of start-up
+              ecosystems, help build sustainable and successful companies, and
+              empower the broader community with technology workshops, design
+              classes, educational experiences, and industry leader keynotes and
+              mentorship.
             </Text>
           </Flex>
         </Stack>
