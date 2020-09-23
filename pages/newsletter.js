@@ -16,10 +16,9 @@ import NewsletterLink from "../components/NewsletterLink";
 // eslint-disable-next-line import/no-unresolved, import/extensions
 import { frontMatter as newsletters } from "./newsletter/**/*.mdx";
 
-const url = "https://leerob.io/newsletter";
-const title = "Newsletter – Lee Robinson";
-const description =
-  "Thoughts on the software industry, programming, tech, videography, music, and my personal life.";
+const url = "https://boland.onl/newsletter";
+const title = "Newsletter – Michael Boland";
+const description = "Thoughts, notes, and conundrums.";
 
 const Newsletter = () => {
   const { colorMode } = useColorMode();
