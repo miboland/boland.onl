@@ -2,12 +2,6 @@
   "version": 2,
   "cleanUrls": true,
   "trailingSlash": false,
-  "env": {
-    "FIREBASE_PRIVATE_KEY": "@firebase-private-key",
-    "FIREBASE_CLIENT_EMAIL": "@firebase-client-email",
-    "GOOGLE_ENCRYPTION_IV": "@google-encryption-iv",
-    "GOOGLE_ENCRYPTION_KEY": "@google-encryption-key"
-  },
   "redirects": [
     {
       "source": "/resume",
