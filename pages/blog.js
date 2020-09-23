@@ -72,8 +72,12 @@ const Blog = () => {
             <Heading letterSpacing="tight" mb={2} as="h1" size="2xl">
               Blog
             </Heading>
-            <Text color={secondaryTextColor[colorMode]}>
+            {/* <Text color={secondaryTextColor[colorMode]}>
               {`In total, I've written ${blogPosts.length} articles on this site.
+                Use the search below to filter by title.`}
+            </Text> */}
+            <Text color={secondaryTextColor[colorMode]}>
+              {`In total, I've written 0 articles on this site.
                 Use the search below to filter by title.`}
             </Text>
             <InputGroup my={4} mr={4} w="100%">
@@ -98,9 +102,10 @@ const Blog = () => {
               <Heading letterSpacing="tight" mb={4} size="xl" fontWeight={700}>
                 Most Popular
               </Heading>
-              <BlogPost {...styleGuides} />
+              {"No posts found."}
+              {/* <BlogPost {...styleGuides} />
               <BlogPost {...stripeDesign} />
-              <BlogPost {...monorepo} />
+              <BlogPost {...monorepo} /> */}
             </Flex>
           )}
           <Flex
@@ -113,10 +118,11 @@ const Blog = () => {
             <Heading letterSpacing="tight" mb={4} size="xl" fontWeight={700}>
               All Posts
             </Heading>
-            {!filteredBlogPosts.length && "No posts found."}
+            {"No posts found."}
+            {/* {!filteredBlogPosts.length && "No posts found."}
             {filteredBlogPosts.map((frontMatter) => (
               <BlogPost key={frontMatter.title} {...frontMatter} />
-            ))}
+            ))} */}
           </Flex>
         </Stack>
       </Container>
