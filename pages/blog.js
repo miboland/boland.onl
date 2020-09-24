@@ -13,7 +13,7 @@ import {
 } from "@chakra-ui/core";
 
 import Container from "../components/Container";
-import BlogPost from "../components/BlogPost";
+// import BlogPost from "../components/BlogPost";
 
 // eslint-disable-next-line import/no-unresolved, import/extensions
 import { frontMatter as blogPosts } from "./blog/**/*.mdx";
