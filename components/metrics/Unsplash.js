@@ -12,7 +12,7 @@ const Unsplash = () => {
 
   const downloads = format(data?.downloads);
   const views = format(data?.views);
-  const link = "https://unsplash.com/@leerob";
+  const link = "https://unsplash.com/@miboland";
 
   return (
     <SimpleGrid columns={[1, 1, 2]} spacing={4} mb={4}>

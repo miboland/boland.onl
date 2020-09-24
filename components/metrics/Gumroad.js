@@ -10,7 +10,7 @@ const Gumroad = () => {
   const { data } = useSWR("/api/gumroad", fetcher);
 
   const sales = format(data?.sales);
-  const link = "https://gumroad.com/leerob";
+  const link = "https://gumroad.com/miboland";
 
   return (
     <MetricCard

@@ -28,7 +28,7 @@ export default (frontMatter) => {
     return (
       <Container>
         <BlogSeo
-          url={`https://leerob.io/newsletter/${slug}`}
+          url={`https://boland.onl/newsletter/${slug}`}
           {...frontMatter}
         />
         <Stack
@@ -59,15 +59,10 @@ export default (frontMatter) => {
               mb={4}
             >
               <Flex align="center">
-                <Avatar
-                  size="xs"
-                  name="Lee Robinson"
-                  src="https://bit.ly/33vEjhB"
-                  mr={2}
-                />
+                <Avatar size="xs" name="Michael Boland" src="" mr={2} />
                 <Text fontSize="sm" color={textColor[colorMode]}>
                   {frontMatter.by}
-                  {"Lee Robinson / "}
+                  {"Michael Boland / "}
                   {format(parseISO(frontMatter.publishedAt), "MMMM dd, yyyy")}
                 </Text>
               </Flex>

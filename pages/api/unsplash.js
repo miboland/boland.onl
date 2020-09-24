@@ -9,7 +9,7 @@ export default async (_, res) => {
     });
   }
 
-  const userStats = await unsplash.users.statistics("leerob");
+  const userStats = await unsplash.users.statistics("miboland");
   const { downloads, views } = await toJson(userStats);
 
   return res.status(200).json({
