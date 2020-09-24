@@ -14,7 +14,7 @@ import Subscribe from "../components/Subscribe";
 import NewsletterLink from "../components/NewsletterLink";
 
 // eslint-disable-next-line import/no-unresolved, import/extensions
-import { frontMatter as newsletters } from "./newsletter/**/*.mdx";
+// import { frontMatter as newsletters } from "./newsletter/**/*.mdx";
 
 const url = "https://boland.onl/newsletter";
 const title = "Newsletter – Michael Boland";
@@ -75,7 +75,7 @@ const Newsletter = () => {
             <Heading letterSpacing="tight" mb={4} size="xl" fontWeight={700}>
               Archive
             </Heading>
-            <List styleType="disc">
+            {/* <List styleType="disc">
               {newsletters
                 .sort(
                   (a, b) =>
@@ -85,7 +85,7 @@ const Newsletter = () => {
                 .map((frontMatter) => (
                   <NewsletterLink key={frontMatter.title} {...frontMatter} />
                 ))}
-            </List>
+            </List> */}
           </Flex>
         </Stack>
       </Container>

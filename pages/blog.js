@@ -16,10 +16,10 @@ import Container from "../components/Container";
 // import BlogPost from "../components/BlogPost";
 
 // eslint-disable-next-line import/no-unresolved, import/extensions
-import { frontMatter as blogPosts } from "./blog/**/*.mdx";
-import { frontMatter as styleGuides } from "./blog/style-guides-component-libraries-design-systems.mdx";
-import { frontMatter as stripeDesign } from "./blog/how-stripe-designs-beautiful-websites.mdx";
-import { frontMatter as monorepo } from "./blog/monorepo-lerna-yarn-workspaces.mdx";
+// import { frontMatter as blogPosts } from "./blog/**/*.mdx";
+// import { frontMatter as styleGuides } from "./blog/style-guides-component-libraries-design-systems.mdx";
+// import { frontMatter as stripeDesign } from "./blog/how-stripe-designs-beautiful-websites.mdx";
+// import { frontMatter as monorepo } from "./blog/monorepo-lerna-yarn-workspaces.mdx";
 
 const url = "https://boland.onl/blog";
 const title = "Blog – Michael Boland";
@@ -33,14 +33,16 @@ const Blog = () => {
     dark: "gray.400",
   };
 
-  const filteredBlogPosts = blogPosts
-    .sort(
-      (a, b) =>
-        Number(new Date(b.publishedAt)) - Number(new Date(a.publishedAt))
-    )
-    .filter((frontMatter) =>
-      frontMatter.title.toLowerCase().includes(searchValue.toLowerCase())
-    );
+  /*
+   * const filteredBlogPosts = blogPosts
+   *   .sort(
+   *     (a, b) =>
+   *       Number(new Date(b.publishedAt)) - Number(new Date(a.publishedAt))
+   *   )
+   *   .filter((frontMatter) =>
+   *     frontMatter.title.toLowerCase().includes(searchValue.toLowerCase())
+   *   );
+   */
 
   return (
     <>
