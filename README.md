@@ -1,12 +1,12 @@
 # boland.onl
 
-My portfolio has transformed over the years - from a static HTML site, to Jekyll, to Hugo, and finally to Next.js/React/MDX. My personal slice of the internet provides a platform for my writing and to showcase my latest work.
+My personal website and portfolio.
 
 ## Overview
 
 - `pages/api/*` - [API routes](https://nextjs.org/docs/api-routes/introduction) powering [`/dashboard`](https://boland.onl/dashboard), newsletter subscription, and post views.
 - `pages/blog/*` - Static pre-rendered blog pages using [MDX](https://github.com/mdx-js/mdx).
-- `pages/dashboard` - [Personal dashboard](https://boland.onl/dashboard) containing metrics like sales, views, and subscribers.
+- `pages/dashboard` - [Personal dashboard](https://boland.onl/dashboard) containing various metrics.
 - `pages/*` - All other static pages.
 
 ## Running Locally
