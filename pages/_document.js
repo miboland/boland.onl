@@ -10,7 +10,7 @@ class MyDocument extends Document {
         <Head>
           <meta content="IE=edge" httpEquiv="X-UA-Compatible" />
           <meta content="width=device-width, initial-scale=1" name="viewport" />
-          <meta content="#ffffff" name="theme-color" />
+          <meta name="theme-color" content="#ffffff" />
 
           <link href="/static/favicons/favicon.ico" rel="shortcut icon" />
           <link href="/static/favicons/site.webmanifest" rel="manifest" />
@@ -32,13 +32,10 @@ class MyDocument extends Document {
             href="/static/favicons/favicon-16x16.png"
           />
           <link
-            color="#FFFFFF"
+            color="#000000"
             href="/static/favicons/safari-pinned-tab.svg"
             rel="mask-icon"
           />
-          <meta name="msapplication-TileColor" content="#da532c" />
-          <meta name="theme-color" content="#ffffff" />
-          <meta name="theme-color" content="#ffffff" />
         </Head>
         <body>
           <Main />
