@@ -15,37 +15,31 @@ class MyDocument extends Document {
           <link
             rel="apple-touch-icon"
             sizes="180x180"
-            href="/public/static/favicons/apple-touch-icon.png"
+            href="/static/favicons/apple-touch-icon.png"
           />
           <link
             rel="icon"
             type="image/png"
             sizes="32x32"
-            href="/public/static/favicons/favicon-32x32.png"
+            href="/static/favicons/favicon-32x32.png"
           />
           <link
             rel="icon"
             type="image/png"
             sizes="16x16"
-            href="/public/static/favicons/favicon-16x16.png"
+            href="/static/favicons/favicon-16x16.png"
           />
-          <link
-            rel="manifest"
-            href="/public/static/favicons/site.webmanifest"
-          />
+          <link rel="manifest" href="/static/favicons/site.webmanifest" />
           <link
             rel="mask-icon"
-            href="/public/static/favicons/safari-pinned-tab.svg"
+            href="/static/favicons/safari-pinned-tab.svg"
             color="#5bbad5"
           />
-          <link
-            rel="shortcut icon"
-            href="/public/static/favicons/favicon.ico"
-          />
+          <link rel="shortcut icon" href="/static/favicons/favicon.ico" />
           <meta name="msapplication-TileColor" content="#000000" />
           <meta
             name="msapplication-config"
-            content="/public/static/favicons/browserconfig.xml"
+            content="/static/favicons/browserconfig.xml"
           />
         </Head>
         <body>
