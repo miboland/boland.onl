@@ -12,29 +12,40 @@ class MyDocument extends Document {
           <meta content="width=device-width, initial-scale=1" name="viewport" />
           <meta name="theme-color" content="#ffffff" />
 
-          <link href="/static/favicons/favicon.ico" rel="shortcut icon" />
-          <link href="/static/favicons/site.webmanifest" rel="manifest" />
           <link
             rel="apple-touch-icon"
             sizes="180x180"
-            href="/static/favicons/apple-touch-icon.png"
+            href="/public/static/favicons/apple-touch-icon.png"
           />
           <link
             rel="icon"
             type="image/png"
             sizes="32x32"
-            href="/static/favicons/favicon-32x32.png"
+            href="/public/static/favicons/favicon-32x32.png"
           />
           <link
             rel="icon"
             type="image/png"
             sizes="16x16"
-            href="/static/favicons/favicon-16x16.png"
+            href="/public/static/favicons/favicon-16x16.png"
           />
           <link
-            color="#000000"
-            href="/static/favicons/safari-pinned-tab.svg"
+            rel="manifest"
+            href="/public/static/favicons/site.webmanifest"
+          />
+          <link
             rel="mask-icon"
+            href="/public/static/favicons/safari-pinned-tab.svg"
+            color="#5bbad5"
+          />
+          <link
+            rel="shortcut icon"
+            href="/public/static/favicons/favicon.ico"
+          />
+          <meta name="msapplication-TileColor" content="#000000" />
+          <meta
+            name="msapplication-config"
+            content="/public/static/favicons/browserconfig.xml"
           />
         </Head>
         <body>
