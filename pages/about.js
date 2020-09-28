@@ -14,7 +14,7 @@ import Container from "../components/Container";
 import { CustomLink } from "../components/MDXComponents";
 
 const url = "https://boland.onl/about";
-const title = "About – Michael Boland";
+const title = "Michael Boland";
 
 const About = () => {
   const { colorMode } = useColorMode();

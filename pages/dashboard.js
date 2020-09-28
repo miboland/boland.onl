@@ -19,7 +19,7 @@ import YouTube from "../components/metrics/Youtube";
 import { CustomLink } from "../components/MDXComponents";
 
 const url = "https://boland.onl/dashboard";
-const title = "Dashboard – Michael Boland";
+const title = "Michael Boland";
 const description =
   "My personal dashboard, built with Next.js API routes deployed as serverless functions.";
 

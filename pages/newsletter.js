@@ -17,7 +17,7 @@ import NewsletterLink from "../components/NewsletterLink";
 // import { frontMatter as newsletters } from "./newsletter/**/*.mdx";
 
 const url = "https://boland.onl/newsletter";
-const title = "Newsletter – Michael Boland";
+const title = "Michael Boland";
 const description = "Thoughts, notes, and conundrums.";
 
 const Newsletter = () => {

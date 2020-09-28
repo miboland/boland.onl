@@ -22,7 +22,7 @@ import Container from "../components/Container";
 // import { frontMatter as monorepo } from "./blog/monorepo-lerna-yarn-workspaces.mdx";
 
 const url = "https://boland.onl/blog";
-const title = "Blog – Michael Boland";
+const title = "Michael Boland";
 const description = "Thoughts, notes, and conundrums.";
 
 const Blog = () => {
