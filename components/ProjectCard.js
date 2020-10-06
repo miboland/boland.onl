@@ -1,5 +1,5 @@
 import React from "react";
-import * as Fathom from "fathom-client";
+// import * as Fathom from "fathom-client";
 import {
   Flex,
   Link,
@@ -10,15 +10,19 @@ import {
   useColorMode,
 } from "@chakra-ui/core";
 
-const trackGoal = (title) => {
-  const goalCodes = {
-    "React 2025": "5WGDOKV0",
-    "Mastering Next.js": "HV9HDL0O",
-    jamstackfns: "LRXBPLZS",
-  };
+/*
+ * const trackGoal = (title) => {
+ *   const goalCodes = {
+ *     "React 2025": "5WGDOKV0",
+ *     "Mastering Next.js": "HV9HDL0O",
+ *     jamstackfns: "LRXBPLZS",
+ *   };
+ */
 
-  Fathom.trackGoal(goalCodes[title], 0);
-};
+/*
+ *   Fathom.trackGoal(goalCodes[title], 0);
+ * };
+ */
 
 const ProjectCard = ({ title, description, href, icon }) => {
   const { colorMode } = useColorMode();
@@ -35,7 +39,7 @@ const ProjectCard = ({ title, description, href, icon }) => {
     <Link
       mb={4}
       href={href}
-      onClick={() => trackGoal(title)}
+      // onClick={() => trackGoal(title)}
       title={title}
       isExternal
       _hover={{
@@ -51,7 +55,7 @@ const ProjectCard = ({ title, description, href, icon }) => {
         p={4}
       >
         <Icon
-          aria-label="LinkedIn"
+          aria-label="Project Icon"
           name={icon}
           color={iconColor[colorMode]}
           size="32px"

@@ -80,7 +80,7 @@ const Index = () => {
             title="Krishnamurti Center"
             description="A platform to access the collected life works, biographies, and personal writings of Jiddu Krishnamurti."
             href="https://krishnamurti.onl/"
-            icon=""
+            icon="krishnamurti"
           />
         </Flex>
         <Timeline />
