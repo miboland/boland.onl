@@ -15,6 +15,7 @@ import { CustomLink } from "../components/MDXComponents";
 
 const url = "https://boland.onl/about";
 const title = "Michael Boland";
+const description = "";
 
 const About = () => {
   const { colorMode } = useColorMode();
@@ -31,6 +32,17 @@ const About = () => {
         openGraph={{
           url,
           title,
+          description,
+          /*
+           * images: [
+           *   {
+           *     url: "https://boland.onl/static/images/dashboard.jpg",
+           *     alt: description,
+           *     width: 1280,
+           *     height: 720,
+           *   },
+           * ],
+           */
         }}
       />
       <Container>

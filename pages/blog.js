@@ -54,6 +54,16 @@ const Blog = () => {
           url,
           title,
           description,
+          /*
+           * images: [
+           *   {
+           *     url: "https://boland.onl/static/images/dashboard.jpg",
+           *     alt: description,
+           *     width: 1280,
+           *     height: 720,
+           *   },
+           * ],
+           */
         }}
       />
       <Container>
