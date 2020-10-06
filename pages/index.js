@@ -78,8 +78,8 @@ const Index = () => {
           /> */}
           <ProjectCard
             title="Krishnamurti Center"
-            description="A platform to read the collected life works, biographies, and personal writings of Jiddu Krishnamurti."
-            href="https://krishnamurti.center/"
+            description="A platform to access the collected life works, biographies, and personal writings of Jiddu Krishnamurti."
+            href="https://krishnamurti.onl/"
             icon=""
           />
         </Flex>
