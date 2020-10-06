@@ -65,17 +65,11 @@ const Index = () => {
             Projects
           </Heading>
           <ProjectCard
-            title="DSM Salary"
-            description="Easily view the salary ranges of companies and start-ups throughout the Des Moines metro area."
-            href="https://dsmsalary.onl/"
-            icon=""
+            title="The Wagelist"
+            description="A crowd-sourced salary archive of companies and start-ups throughout the Des Moines metro area."
+            href="https://wagelist.onl/"
+            icon="wagelist"
           />
-          {/* <ProjectCard
-            title="jamstackfns"
-            description="The best serverless functions for JAMstack applications. Deploy to Vercel or Netlify for your static site."
-            href="https://jamstackfns.com/"
-            icon="jamstackfns"
-          /> */}
           <ProjectCard
             title="Krishnamurti Center"
             description="A platform to access the collected life works, biographies, and personal writings of Jiddu Krishnamurti."
