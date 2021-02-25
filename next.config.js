@@ -22,6 +22,20 @@ module.exports = withMdxEnhanced({
   experimental: {
     modern: true,
   },
+  redirects: () => {
+    return [
+      {
+      source: "/resume",
+      destination: "/resume.pdf",
+      permanent: true
+      },
+      {
+        source: '/blog',
+        destination: '/',
+        permanent: false,
+      },
+    ]
+  },
   webpack: (config, { isServer }) => {
     if (isServer) {
       require("./scripts/generate-sitemap");

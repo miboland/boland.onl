@@ -2,12 +2,6 @@
   "version": 2,
   "cleanUrls": true,
   "trailingSlash": false,
-  "redirects": [
-    {
-      "source": "/resume",
-      "destination": "/resume.pdf"
-    }
-  ],
   "headers": [
     {
       "source": "/api/unsplash",

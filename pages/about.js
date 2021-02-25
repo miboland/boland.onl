@@ -6,8 +6,6 @@ import {
   Text,
   Flex,
   Stack,
-  Link,
-  Icon,
 } from "@chakra-ui/react";
 
 import Container from "../components/Container";
@@ -92,7 +90,7 @@ const About = () => {
               I grew up in small-town Illinois and went to school at Arizona
               State University, graduating with a degree in Business and
               Anthropology. I came to tech from a non-traditional background,
-              with academic research focuses in business anthropology and
+              with research focuses in business anthropology and
               cyberpsychology.
             </Text>
             <Heading letterSpacing="tight" mt={8} mb={4} as="h2" size="xl">
