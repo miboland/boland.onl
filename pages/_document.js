@@ -1,11 +1,11 @@
-import Document, { Html, Head, Main, NextScript } from "next/document";
-import NextHead from "next/head";
-import React from "react";
-import { GoogleFonts } from "next-google-fonts";
+import Document, { Html, Head, Main, NextScript } from 'next/document'
+import NextHead from 'next/head'
+import React from 'react'
+import { GoogleFonts } from 'next-google-fonts'
 
 class MyDocument extends Document {
   static getInitialProps(ctx) {
-    return Document.getInitialProps(ctx);
+    return Document.getInitialProps(ctx)
   }
 
   render() {
@@ -36,25 +36,18 @@ class MyDocument extends Document {
             href="/static/favicons/favicon-16x16.png"
           />
           <link rel="manifest" href="/static/favicons/site.webmanifest" />
-          <link
-            rel="mask-icon"
-            href="/static/favicons/safari-pinned-tab.svg"
-            color="#5bbad5"
-          />
+          <link rel="mask-icon" href="/static/favicons/safari-pinned-tab.svg" color="#5bbad5" />
           <link rel="shortcut icon" href="/static/favicons/favicon.ico" />
           <meta name="msapplication-TileColor" content="#000000" />
-          <meta
-            name="msapplication-config"
-            content="/static/favicons/browserconfig.xml"
-          />
+          <meta name="msapplication-config" content="/static/favicons/browserconfig.xml" />
         </Head>
         <body>
           <Main />
           <NextScript />
         </body>
       </Html>
-    );
+    )
   }
 }
 
-export default MyDocument;
+export default MyDocument

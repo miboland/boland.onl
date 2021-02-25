@@ -1,22 +1,15 @@
-import React from "react";
-import NextLink from "next/link";
-import {
-  useColorMode,
-  Heading,
-  Text,
-  Flex,
-  Stack,
-  Button,
-} from "@chakra-ui/react";
+import React from 'react'
+import NextLink from 'next/link'
+import { useColorMode, Heading, Text, Flex, Stack, Button } from '@chakra-ui/react'
 
-import Container from "../components/Container";
+import Container from '../components/Container'
 
 const Error = () => {
-  const { colorMode } = useColorMode();
+  const { colorMode } = useColorMode()
   const secondaryTextColor = {
-    light: "gray.700",
-    dark: "gray.400",
-  };
+    light: 'gray.700',
+    dark: 'gray.400'
+  }
 
   return (
     <Container>
@@ -38,27 +31,21 @@ const Error = () => {
             404 – Page Not Found
           </Heading>
           <Text color={secondaryTextColor[colorMode]} mt={4}>
-            It seems you've found something that used to exist, or you spelled
-            something wrong.
+            {`It seems you've found something that used to exist, or you spelled
+            something wrong.`}
           </Text>
           <Text color={secondaryTextColor[colorMode]} mb={4} mt={1}>
             Can you double check that URL?
           </Text>
           <NextLink href="/" passHref>
-            <Button
-              as="a"
-              p={[1, 4]}
-              w="250px"
-              fontWeight="bold"
-              m="3rem auto 0"
-            >
+            <Button as="a" p={[1, 4]} w="250px" fontWeight="bold" m="3rem auto 0">
               Return Home
             </Button>
           </NextLink>
         </Flex>
       </Stack>
     </Container>
-  );
-};
+  )
+}
 
-export default Error;
+export default Error

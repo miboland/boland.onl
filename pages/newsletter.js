@@ -1,31 +1,31 @@
-import React from "react";
-import { NextSeo } from "next-seo";
+import React from 'react'
+import { NextSeo } from 'next-seo'
 import {
   useColorMode,
   Heading,
   Text,
   Flex,
-  Stack,
-  List,
-} from "@chakra-ui/react";
+  Stack
+  // List,
+} from '@chakra-ui/react'
 
-import Container from "../components/Container";
-import Subscribe from "../components/Subscribe";
-import NewsletterLink from "../components/NewsletterLink";
+import Container from '../components/Container'
+import Subscribe from '../components/Subscribe'
+// import NewsletterLink from '../components/NewsletterLink';
 
 // eslint-disable-next-line import/no-unresolved, import/extensions
 // import { frontMatter as newsletters } from "./newsletter/**/*.mdx";
 
-const url = "https://boland.onl/newsletter";
-const title = "Michael Boland";
-const description = "Thoughts, notes, and conundrums.";
+const url = 'https://boland.onl/newsletter'
+const title = 'Michael Boland'
+const description = 'Thoughts, notes, and conundrums.'
 
 const Newsletter = () => {
-  const { colorMode } = useColorMode();
+  const { colorMode } = useColorMode()
   const secondaryTextColor = {
-    light: "gray.700",
-    dark: "gray.400",
-  };
+    light: 'gray.700',
+    dark: 'gray.400'
+  }
 
   return (
     <>
@@ -36,7 +36,7 @@ const Newsletter = () => {
         openGraph={{
           url,
           title,
-          description,
+          description
         }}
       />
       <Container>
@@ -58,10 +58,10 @@ const Newsletter = () => {
               Newsletter
             </Heading>
             <Text color={secondaryTextColor[colorMode]}>
-              My newsletter provides a behind-the-scenes look into what I'm
+              {`My newsletter provides a behind-the-scenes look into what I'm
               working on and writing about. I frequently share some of my
               favorite articles I've read, as well as anything fascinating about
-              technology.
+              technology.`}
             </Text>
           </Flex>
           <Subscribe />
@@ -90,7 +90,7 @@ const Newsletter = () => {
         </Stack>
       </Container>
     </>
-  );
-};
+  )
+}
 
-export default Newsletter;
+export default Newsletter

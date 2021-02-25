@@ -1,12 +1,12 @@
-import React from "react";
-import { NextSeo, ArticleJsonLd } from "next-seo";
+import React from 'react'
+import { NextSeo, ArticleJsonLd } from 'next-seo'
 
 const BlogSeo = ({ title, summary, publishedAt, url, image }) => {
-  const date = new Date(publishedAt).toISOString();
+  const date = new Date(publishedAt).toISOString()
   const featuredImage = {
     url: `https://boland.onl${image}`,
-    alt: title,
-  };
+    alt: title
+  }
 
   return (
     <>
@@ -15,14 +15,14 @@ const BlogSeo = ({ title, summary, publishedAt, url, image }) => {
         description={summary}
         canonical={url}
         openGraph={{
-          type: "article",
+          type: 'article',
           article: {
-            publishedTime: date,
+            publishedTime: date
           },
           url,
           title,
           description: summary,
-          images: [featuredImage],
+          images: [featuredImage]
         }}
       />
       <ArticleJsonLd
@@ -37,7 +37,7 @@ const BlogSeo = ({ title, summary, publishedAt, url, image }) => {
         url={url}
       />
     </>
-  );
-};
+  )
+}
 
-export default BlogSeo;
+export default BlogSeo

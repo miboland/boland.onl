@@ -1,34 +1,27 @@
-import React from "react";
-import { NextSeo } from "next-seo";
-import {
-  useColorMode,
-  Heading,
-  Text,
-  Flex,
-  Stack,
-  SimpleGrid,
-} from "@chakra-ui/react";
+import React from 'react'
+import { NextSeo } from 'next-seo'
+import { useColorMode, Heading, Text, Flex, Stack, SimpleGrid } from '@chakra-ui/react'
 
-import Analytics from "../components/metrics/Analytics";
-import Buttondown from "../components/metrics/Buttondown";
-import Container from "../components/Container";
-import GitHub from "../components/metrics/Github";
-import Gumroad from "../components/metrics/Gumroad";
-import Unsplash from "../components/metrics/Unsplash";
-import YouTube from "../components/metrics/Youtube";
-import { CustomLink } from "../components/MDXComponents";
+import Analytics from '../components/metrics/Analytics'
+// import Buttondown from '../components/metrics/Buttondown';
+import Container from '../components/Container'
+import GitHub from '../components/metrics/Github'
+// import Gumroad from '../components/metrics/Gumroad';
+// import Unsplash from '../components/metrics/Unsplash';
+// import YouTube from '../components/metrics/Youtube';
+// import { CustomLink } from '../components/MDXComponents';
 
-const url = "https://boland.onl/dashboard";
-const title = "Michael Boland";
+const url = 'https://boland.onl/dashboard'
+const title = 'Michael Boland'
 const description =
-  "My personal dashboard, built with Next.js API routes deployed as serverless functions.";
+  'My personal dashboard, built with Next.js API routes deployed as serverless functions.'
 
 const Dashboard = () => {
-  const { colorMode } = useColorMode();
+  const { colorMode } = useColorMode()
   const secondaryTextColor = {
-    light: "gray.700",
-    dark: "gray.400",
-  };
+    light: 'gray.700',
+    dark: 'gray.400'
+  }
 
   return (
     <>
@@ -42,12 +35,12 @@ const Dashboard = () => {
           description,
           images: [
             {
-              url: "https://boland.onl/static/images/dashboard.jpg",
+              url: 'https://boland.onl/static/images/dashboard.jpg',
               alt: description,
               width: 1280,
-              height: 720,
-            },
-          ],
+              height: 720
+            }
+          ]
         }}
       />
       <Container>
@@ -69,8 +62,8 @@ const Dashboard = () => {
               Dashboard
             </Heading>
             <Text color={secondaryTextColor[colorMode]}>
-              This is my personal dashboard, built with Next.js API routes
-              deployed as serverless functions.
+              This is my personal dashboard, built with Next.js API routes deployed as serverless
+              functions.
             </Text>
             <Text color={secondaryTextColor[colorMode]}>
               I use this dashboard to track various metrics across platforms.
@@ -97,7 +90,7 @@ const Dashboard = () => {
         </Stack>
       </Container>
     </>
-  );
-};
+  )
+}
 
-export default Dashboard;
+export default Dashboard

@@ -1,24 +1,18 @@
-import React from "react";
-import useSWR from "swr";
-import format from "comma-number";
+import React from 'react'
+import useSWR from 'swr'
+import format from 'comma-number'
 
-import fetcher from "../../lib/fetcher";
+import fetcher from '../../lib/fetcher'
 
-import MetricCard from "./Card";
+import MetricCard from './Card'
 
 const Buttondown = () => {
-  const { data } = useSWR("/api/subscribers", fetcher);
+  const { data } = useSWR('/api/subscribers', fetcher)
 
-  const subscriberCount = format(data?.count);
-  const link = "https://buttondown.email/miboland";
+  const subscriberCount = format(data?.count)
+  const link = 'https://buttondown.email/miboland'
 
-  return (
-    <MetricCard
-      header="Newsletter Subscribers"
-      link={link}
-      metric={subscriberCount}
-    />
-  );
-};
+  return <MetricCard header="Newsletter Subscribers" link={link} metric={subscriberCount} />
+}
 
-export default Buttondown;
+export default Buttondown

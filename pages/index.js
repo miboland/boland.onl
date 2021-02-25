@@ -1,16 +1,15 @@
-import React from "react";
-import { useColorMode, Heading, Text, Flex, Stack } from "@chakra-ui/react";
+import React from 'react'
+import { useColorMode, Heading, Text, Flex, Stack } from '@chakra-ui/react'
 
-import theme from "../styles/theme";
-import Timeline from "../components/Timeline";
-import Container from "../components/Container";
+import Timeline from '../components/Timeline'
+import Container from '../components/Container'
 /*
  * import BlogPost from "../components/BlogPost";
  * import Subscribe from "../components/Subscribe";
  */
-import ProjectCard from "../components/ProjectCard";
-import KrishnamurtiIcon from "../components/icons/KrishnamurtiIcon";
-import WagelistIcon from "../components/icons/WagelistIcon";
+import ProjectCard from '../components/ProjectCard'
+import KrishnamurtiIcon from '../components/icons/KrishnamurtiIcon'
+import WagelistIcon from '../components/icons/WagelistIcon'
 
 /*
  * import { frontMatter as styleGuides } from "./blog/style-guides-component-libraries-design-systems.mdx";
@@ -19,11 +18,11 @@ import WagelistIcon from "../components/icons/WagelistIcon";
  */
 
 const Index = () => {
-  const { colorMode } = useColorMode();
+  const { colorMode } = useColorMode()
   const secondaryTextColor = {
-    light: "gray.700",
-    dark: "gray.400",
-  };
+    light: 'gray.700',
+    dark: 'gray.400'
+  }
 
   return (
     <Container>
@@ -88,7 +87,7 @@ const Index = () => {
         {/* <Subscribe /> */}
       </Stack>
     </Container>
-  );
-};
+  )
+}
 
-export default Index;
+export default Index

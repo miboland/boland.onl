@@ -1,12 +1,12 @@
-import React from "react";
-import { useColorMode, Text, Flex, Box, Link, Icon } from "@chakra-ui/react";
+import React from 'react'
+import { useColorMode, Text, Flex, Box, Link, Icon } from '@chakra-ui/react'
 
 const MetricCard = ({ header, link, metric }) => {
-  const { colorMode } = useColorMode();
+  const { colorMode } = useColorMode()
   const borderColor = {
-    light: "gray.200",
-    dark: "gray.700",
-  };
+    light: 'gray.200',
+    dark: 'gray.700'
+  }
 
   return (
     <Box
@@ -23,10 +23,10 @@ const MetricCard = ({ header, link, metric }) => {
         </Flex>
       </Link>
       <Text mt={2} fontSize="3xl" fontWeight="bold" lineHeight="short">
-        {metric || "-"}
+        {metric || '-'}
       </Text>
     </Box>
-  );
-};
+  )
+}
 
-export default MetricCard;
+export default MetricCard

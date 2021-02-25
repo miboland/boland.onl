@@ -1,18 +1,18 @@
-import React from "react";
-import useSWR from "swr";
-import format from "comma-number";
+import React from 'react'
+import useSWR from 'swr'
+import format from 'comma-number'
 
-import fetcher from "../../lib/fetcher";
+import fetcher from '../../lib/fetcher'
 
-import MetricCard from "./Card";
+import MetricCard from './Card'
 
 const Analytics = () => {
-  const { data } = useSWR("/api/page-views", fetcher);
+  const { data } = useSWR('/api/page-views', fetcher)
 
-  const pageViews = format(data?.total);
-  const link = "https://boland.onl";
+  const pageViews = format(data?.total)
+  const link = 'https://boland.onl'
 
-  return <MetricCard header="All-Time Views" link={link} metric={pageViews} />;
-};
+  return <MetricCard header="All-Time Views" link={link} metric={pageViews} />
+}
 
-export default Analytics;
+export default Analytics

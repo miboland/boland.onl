@@ -1,16 +1,6 @@
-import React from "react";
+import React from 'react'
 // import * as Fathom from "fathom-client";
-import {
-  Flex,
-  Link,
-  Heading,
-  Text,
-  Stack,
-  Icon,
-  useColorMode,
-} from "@chakra-ui/react";
-
-import KrishnamurtiIcon from './icons/KrishnamurtiIcon'
+import { Flex, Link, Heading, Text, Stack, Icon, useColorMode } from '@chakra-ui/react'
 
 /*
  * const trackGoal = (title) => {
@@ -27,15 +17,15 @@ import KrishnamurtiIcon from './icons/KrishnamurtiIcon'
  */
 
 const ProjectCard = ({ title, description, href, icon }) => {
-  const { colorMode } = useColorMode();
+  const { colorMode } = useColorMode()
   const borderColor = {
-    light: "gray.200",
-    dark: "gray.600",
-  };
+    light: 'gray.200',
+    dark: 'gray.600'
+  }
   const iconColor = {
-    light: "gray.1000",
-    dark: "white",
-  };
+    light: 'gray.1000',
+    dark: 'white'
+  }
 
   return (
     <Link
@@ -45,8 +35,11 @@ const ProjectCard = ({ title, description, href, icon }) => {
       title={title}
       isExternal
       _hover={{
-        boxShadow: colorMode === "light" ? "0px 4px 20px rgba(0, 0, 0, 0.05)" : "0px 4px 20px rgba(255, 255, 255, 0.15)",
-        textDecoration: "none",
+        boxShadow:
+          colorMode === 'light'
+            ? '0px 4px 20px rgba(0, 0, 0, 0.05)'
+            : '0px 4px 20px rgba(255, 255, 255, 0.15)',
+        textDecoration: 'none'
       }}
     >
       <Flex
@@ -67,20 +60,16 @@ const ProjectCard = ({ title, description, href, icon }) => {
           mr={4}
         />
         <Stack>
-          <Heading
-            as="h4"
-            size="md"
-            fontWeight="bold"
-            mb={1}
-            letterSpacing="tighter"
-          >
+          <Heading as="h4" size="md" fontWeight="bold" mb={1} letterSpacing="tighter">
             {title}
           </Heading>
-          <Text color={colorMode === "light" ? "#2D3748" : "#A0AEC0"} lineHeight="1.3">{description}</Text>
+          <Text color={colorMode === 'light' ? '#2D3748' : '#A0AEC0'} lineHeight="1.3">
+            {description}
+          </Text>
         </Stack>
       </Flex>
     </Link>
-  );
-};
+  )
+}
 
-export default ProjectCard;
+export default ProjectCard

@@ -1,37 +1,36 @@
-import { useState, useEffect } from "react";
-import format from "comma-number";
+import { useState, useEffect } from 'react'
+import format from 'comma-number'
 
-import loadDb from "../lib/db";
+import loadDb from '../lib/db'
 
 const ViewCounter = ({ id }) => {
-  const [views, setViews] = useState("");
+  const [views, setViews] = useState('')
 
   useEffect(() => {
-    const onViews = (newViews) => setViews(newViews.val());
-    let db;
+    const onViews = (newViews) => setViews(newViews.val())
+    let db
 
     const fetchData = async () => {
-      db = await loadDb();
-      db.child(id).on("value", onViews);
-    };
+      db = await loadDb()
+      db.child(id).on('value', onViews)
+    }
 
-    fetchData();
+    fetchData()
 
     return () => {
       if (db) {
-        db.child(id).off("value", onViews);
+        db.child(id).off('value', onViews)
       }
-    };
-  }, [id]);
+    }
+  }, [id])
 
   useEffect(() => {
-    const registerView = () =>
-      fetch(`/api/increment-views?id=${encodeURIComponent(id)}`);
+    const registerView = () => fetch(`/api/increment-views?id=${encodeURIComponent(id)}`)
 
-    registerView();
-  }, [id]);
+    registerView()
+  }, [id])
 
-  return `${views ? format(views) : "–––"} views`;
-};
+  return `${views ? format(views) : '–––'} views`
+}
 
-export default ViewCounter;
+export default ViewCounter

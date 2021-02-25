@@ -1,36 +1,24 @@
-import React from "react";
-import { parseISO, format } from "date-fns";
-import {
-  useColorMode,
-  Heading,
-  Text,
-  Flex,
-  Stack,
-  Avatar,
-} from "@chakra-ui/react";
+import React from 'react'
+import { parseISO, format } from 'date-fns'
+import { useColorMode, Heading, Text, Flex, Stack, Avatar } from '@chakra-ui/react'
 
-import Container from "../components/Container";
-import Subscribe from "../components/Subscribe";
-import BlogSeo from "../components/BlogSeo";
+import Container from '../components/Container'
+import Subscribe from '../components/Subscribe'
+import BlogSeo from '../components/BlogSeo'
 
 export default (frontMatter) => {
-  const slug = frontMatter.__resourcePath
-    .replace("newsletter/", "")
-    .replace(".mdx", "");
+  const slug = frontMatter.__resourcePath.replace('newsletter/', '').replace('.mdx', '')
 
   return ({ children }) => {
-    const { colorMode } = useColorMode();
+    const { colorMode } = useColorMode()
     const textColor = {
-      light: "gray.700",
-      dark: "gray.400",
-    };
+      light: 'gray.700',
+      dark: 'gray.400'
+    }
 
     return (
       <Container>
-        <BlogSeo
-          url={`https://boland.onl/newsletter/${slug}`}
-          {...frontMatter}
-        />
+        <BlogSeo url={`https://boland.onl/newsletter/${slug}`} {...frontMatter} />
         <Stack
           as="article"
           spacing={8}
@@ -52,8 +40,8 @@ export default (frontMatter) => {
             </Heading>
             <Flex
               justify="space-between"
-              align={["initial", "center"]}
-              direction={["column", "row"]}
+              align={['initial', 'center']}
+              direction={['column', 'row']}
               mt={2}
               w="100%"
               mb={4}
@@ -62,8 +50,8 @@ export default (frontMatter) => {
                 <Avatar size="xs" name="Michael Boland" src="" mr={2} />
                 <Text fontSize="sm" color={textColor[colorMode]}>
                   {frontMatter.by}
-                  {"Michael Boland / "}
-                  {format(parseISO(frontMatter.publishedAt), "MMMM dd, yyyy")}
+                  {'Michael Boland / '}
+                  {format(parseISO(frontMatter.publishedAt), 'MMMM dd, yyyy')}
                 </Text>
               </Flex>
               <Text fontSize="sm" color="gray.500" minWidth="100px" mt={[2, 0]}>
@@ -75,6 +63,6 @@ export default (frontMatter) => {
           <Subscribe />
         </Stack>
       </Container>
-    );
-  };
-};
+    )
+  }
+}

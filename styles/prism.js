@@ -1,12 +1,12 @@
-import { css } from "@emotion/react";
-import { theme } from "@chakra-ui/react";
+import { css } from '@emotion/react'
+import { theme } from '@chakra-ui/react'
 
 const prismBaseTheme = css`
   code {
     white-space: pre;
   }
-  code[class*="language-"],
-  pre[class*="language-"] {
+  code[class*='language-'],
+  pre[class*='language-'] {
     color: ${theme.colors.gray[800]};
     background: none;
     font-family: ${theme.fonts.mono};
@@ -26,7 +26,7 @@ const prismBaseTheme = css`
     width: 100%;
   }
   /* Code blocks */
-  pre[class*="language-"] {
+  pre[class*='language-'] {
     padding-top: ${theme.space[4]};
     padding-bottom: ${theme.space[4]};
     padding-left: ${theme.space[4]};
@@ -37,14 +37,14 @@ const prismBaseTheme = css`
     font-size: 0.9rem;
     white-space: nowrap;
   }
-  :not(pre) > code[class*="language-"],
-  pre[class*="language-"] {
+  :not(pre) > code[class*='language-'],
+  pre[class*='language-'] {
     background: ${theme.colors.gray[50]};
     border: 1px solid ${theme.colors.gray[200]};
     border-radius: ${theme.radii.lg};
   }
   /* Inline code */
-  :not(pre) > code[class*="language-"] {
+  :not(pre) > code[class*='language-'] {
     padding: 0.1em;
     border-radius: 0.3em;
     white-space: normal;
@@ -140,18 +140,18 @@ const prismBaseTheme = css`
       margin-top: 0;
     }
   }
-`;
+`
 
 export const prismLightTheme = css`
   ${prismBaseTheme};
 
-  code[class*="language-"],
-  pre[class*="language-"] {
+  code[class*='language-'],
+  pre[class*='language-'] {
     color: ${theme.colors.gray[800]};
   }
 
-  :not(pre) > code[class*="language-"],
-  pre[class*="language-"] {
+  :not(pre) > code[class*='language-'],
+  pre[class*='language-'] {
     background: ${theme.colors.gray[50]};
     border: 1px solid ${theme.colors.gray[200]};
   }
@@ -159,12 +159,12 @@ export const prismLightTheme = css`
   .mdx-marker {
     background-color: hsla(204, 45%, 96%, 1);
   }
-`;
+`
 
 export const prismDarkTheme = css`
   ${prismBaseTheme};
 
-  :not(pre) > code[class*="language-"] {
+  :not(pre) > code[class*='language-'] {
     background: #011627;
   }
 
@@ -204,7 +204,7 @@ export const prismDarkTheme = css`
   .token.selector,
   .token.doctype {
     color: rgb(199, 146, 234);
-    font-style: "italic";
+    font-style: 'italic';
   }
 
   .token.class-name {
@@ -229,13 +229,13 @@ export const prismDarkTheme = css`
     color: rgb(178, 204, 214);
   }
 
-  code[class*="language-"],
-  pre[class*="language-"] {
+  code[class*='language-'],
+  pre[class*='language-'] {
     color: ${theme.colors.gray[50]};
   }
 
-  :not(pre) > code[class*="language-"],
-  pre[class*="language-"] {
+  :not(pre) > code[class*='language-'],
+  pre[class*='language-'] {
     background: ${theme.colors.gray[800]};
     border: 1px solid ${theme.colors.gray[700]};
   }
@@ -249,4 +249,4 @@ export const prismDarkTheme = css`
     color: ${theme.colors.gray[100]};
     border: 1px solid ${theme.colors.gray[700]};
   }
-`;
+`
