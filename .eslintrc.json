@@ -48,5 +48,8 @@
   ],
   "globals": {
     "fetch": true
-  }
+  },
+  "ignorePatterns": [
+    "scripts/*"
+  ]
 }
