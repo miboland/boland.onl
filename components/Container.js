@@ -1,7 +1,8 @@
 import React from "react";
 import NextLink from "next/link";
-import { useColorMode, Button, Flex, Box, IconButton } from "@chakra-ui/core";
+import { useColorMode, Button, Flex, Box, IconButton } from "@chakra-ui/react";
 import styled from "@emotion/styled";
+import { MoonIcon, SunIcon } from "@chakra-ui/icons";
 
 import Footer from "./Footer";
 
@@ -46,7 +47,7 @@ const Container = ({ children }) => {
       >
         <IconButton
           aria-label="Toggle dark mode"
-          icon={colorMode === "dark" ? "sun" : "moon"}
+          icon={colorMode === "dark" ? <SunIcon /> : <MoonIcon />}
           onClick={toggleColorMode}
         />
         <Box>
@@ -55,11 +56,11 @@ const Container = ({ children }) => {
               Dashboard
             </Button>
           </NextLink> */}
-          <NextLink href="/blog" passHref>
+          {/* <NextLink href="/blog" passHref>
             <Button as="a" variant="ghost" p={[1, 4]}>
               Blog
             </Button>
-          </NextLink>
+          </NextLink> */}
           <NextLink href="/about" passHref>
             <Button as="a" variant="ghost" p={[1, 4]}>
               About

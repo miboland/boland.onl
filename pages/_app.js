@@ -1,13 +1,14 @@
 import React from "react";
 import { MDXProvider } from "@mdx-js/react";
-import { Global, css } from "@emotion/core";
+import { Global, css } from "@emotion/react";
 import { DefaultSeo } from "next-seo";
 import {
   ThemeProvider,
   CSSReset,
-  ColorModeProvider,
   useColorMode,
-} from "@chakra-ui/core";
+  extendTheme,
+  ChakraProvider,
+} from "@chakra-ui/react";
 
 import theme from "../styles/theme";
 import { prismLightTheme, prismDarkTheme } from "../styles/prism";
@@ -48,16 +49,22 @@ const GlobalStyle = ({ children }) => {
 };
 
 const App = ({ Component, pageProps }) => {
+  const config = {
+    useSystemColorMode: true,
+  };
+
+  const extendedTheme = extendTheme({ config });
+
   return (
-    <ThemeProvider theme={theme}>
-      <MDXProvider components={MDXComponents}>
-        <ColorModeProvider value="light">
+    <ThemeProvider theme={extendedTheme}>
+      <ChakraProvider theme={extendedTheme}>
+        <MDXProvider components={MDXComponents}>
           <GlobalStyle>
             <DefaultSeo {...SEO} />
             <Component {...pageProps} />
           </GlobalStyle>
-        </ColorModeProvider>
-      </MDXProvider>
+        </MDXProvider>
+      </ChakraProvider>
     </ThemeProvider>
   );
 };

@@ -8,7 +8,7 @@ import {
   Stack,
   Link,
   Icon,
-} from "@chakra-ui/core";
+} from "@chakra-ui/react";
 
 import Container from "../components/Container";
 import { CustomLink } from "../components/MDXComponents";

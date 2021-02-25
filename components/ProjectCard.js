@@ -8,7 +8,9 @@ import {
   Stack,
   Icon,
   useColorMode,
-} from "@chakra-ui/core";
+} from "@chakra-ui/react";
+
+import KrishnamurtiIcon from './icons/KrishnamurtiIcon'
 
 /*
  * const trackGoal = (title) => {
@@ -43,7 +45,7 @@ const ProjectCard = ({ title, description, href, icon }) => {
       title={title}
       isExternal
       _hover={{
-        boxShadow: "0px 4px 20px rgba(0, 0, 0, 0.05)",
+        boxShadow: colorMode === "light" ? "0px 4px 20px rgba(0, 0, 0, 0.05)" : "0px 4px 20px rgba(255, 255, 255, 0.15)",
         textDecoration: "none",
       }}
     >
@@ -56,9 +58,11 @@ const ProjectCard = ({ title, description, href, icon }) => {
       >
         <Icon
           aria-label="Project Icon"
-          name={icon}
+          as={icon}
           color={iconColor[colorMode]}
           size="32px"
+          w={6}
+          h={6}
           ml={2}
           mr={4}
         />
@@ -67,12 +71,12 @@ const ProjectCard = ({ title, description, href, icon }) => {
             as="h4"
             size="md"
             fontWeight="bold"
-            mb={4}
+            mb={1}
             letterSpacing="tighter"
           >
             {title}
           </Heading>
-          <Text lineHeight="1.3">{description}</Text>
+          <Text color={colorMode === "light" ? "#2D3748" : "#A0AEC0"} lineHeight="1.3">{description}</Text>
         </Stack>
       </Flex>
     </Link>

@@ -1,15 +1,21 @@
-import Document, { Head, Main, NextScript } from "next/document";
+import Document, { Html, Head, Main, NextScript } from "next/document";
+import NextHead from "next/head";
 import React from "react";
-import GoogleFonts from "next-google-fonts";
+import { GoogleFonts } from "next-google-fonts";
 
 class MyDocument extends Document {
+  static getInitialProps(ctx) {
+    return Document.getInitialProps(ctx);
+  }
+
   render() {
     return (
-      <html lang="en">
-        <GoogleFonts href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" />
+      <Html lang="en">
         <Head>
+          <NextHead>
+            <GoogleFonts href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" />
+          </NextHead>
           <meta content="IE=edge" httpEquiv="X-UA-Compatible" />
-          <meta content="width=device-width, initial-scale=1" name="viewport" />
           <meta name="theme-color" content="#ffffff" />
 
           <link
@@ -46,7 +52,7 @@ class MyDocument extends Document {
           <Main />
           <NextScript />
         </body>
-      </html>
+      </Html>
     );
   }
 }

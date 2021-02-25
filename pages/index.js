@@ -1,15 +1,22 @@
 import React from "react";
-import { useColorMode, Heading, Text, Flex, Stack } from "@chakra-ui/core";
+import { useColorMode, Heading, Text, Flex, Stack } from "@chakra-ui/react";
 
+import theme from "../styles/theme";
 import Timeline from "../components/Timeline";
 import Container from "../components/Container";
-// import BlogPost from "../components/BlogPost";
-// import Subscribe from "../components/Subscribe";
+/*
+ * import BlogPost from "../components/BlogPost";
+ * import Subscribe from "../components/Subscribe";
+ */
 import ProjectCard from "../components/ProjectCard";
+import KrishnamurtiIcon from "../components/icons/KrishnamurtiIcon";
+import WagelistIcon from "../components/icons/WagelistIcon";
 
-// import { frontMatter as styleGuides } from "./blog/style-guides-component-libraries-design-systems.mdx";
-// import { frontMatter as stripeDesign } from "./blog/how-stripe-designs-beautiful-websites.mdx";
-// import { frontMatter as monorepo } from "./blog/monorepo-lerna-yarn-workspaces.mdx";
+/*
+ * import { frontMatter as styleGuides } from "./blog/style-guides-component-libraries-design-systems.mdx";
+ * import { frontMatter as stripeDesign } from "./blog/how-stripe-designs-beautiful-websites.mdx";
+ * import { frontMatter as monorepo } from "./blog/monorepo-lerna-yarn-workspaces.mdx";
+ */
 
 const Index = () => {
   const { colorMode } = useColorMode();
@@ -68,13 +75,13 @@ const Index = () => {
             title="The Wagelist"
             description="A crowd-sourced salary archive of companies and start-ups throughout the Des Moines metro area."
             href="https://wagelist.onl/"
-            icon="wagelist"
+            icon={WagelistIcon}
           />
           <ProjectCard
             title="Krishnamurti Center"
             description="A platform to access the collected life works, biographies, and personal writings of Jiddu Krishnamurti."
             href="https://krishnamurti.onl/"
-            icon="krishnamurti"
+            icon={KrishnamurtiIcon}
           />
         </Flex>
         <Timeline />
