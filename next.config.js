@@ -32,6 +32,16 @@ module.exports = withMdxEnhanced({
       source: '/blog',
       destination: '/',
       permanent: false
+    },
+    {
+      source: '/dashboard',
+      destination: '/',
+      permanent: false
+    },
+    {
+      source: '/newsletter',
+      destination: '/',
+      permanent: false
     }
   ],
   webpack: (config, { isServer }) => {
