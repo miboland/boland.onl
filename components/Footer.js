@@ -2,7 +2,6 @@ import React from 'react'
 import { Flex, Link, IconButton } from '@chakra-ui/react'
 
 import GithubIcon from './icons/GithubIcon'
-import LinkedinIcon from './icons/LinkedinIcon'
 import MailIcon from './icons/MailIcon'
 
 const Footer = () => (
@@ -11,15 +10,6 @@ const Footer = () => (
       <IconButton
         aria-label="GitHub"
         icon={<GithubIcon />}
-        size="lg"
-        color="gray.500"
-        variant="ghost"
-      />
-    </Link>
-    <Link href="https://www.linkedin.com/in/miboland-" title="LinkedIn" isExternal>
-      <IconButton
-        aria-label="LinkedIn"
-        icon={<LinkedinIcon />}
         size="lg"
         color="gray.500"
         variant="ghost"

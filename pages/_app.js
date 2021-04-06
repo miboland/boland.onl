@@ -53,7 +53,7 @@ const App = ({ Component, pageProps }) => {
     useSystemColorMode: true
   }
 
-  const extendedTheme = extendTheme({ config })
+  const extendedTheme = extendTheme({ ...config })
 
   return (
     <ThemeProvider theme={extendedTheme}>
