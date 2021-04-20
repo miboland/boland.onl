@@ -61,7 +61,7 @@ const Index = () => {
           <BlogPost {...stripeDesign} />
           <BlogPost {...monorepo} />
         </Flex> */}
-        <Flex
+        {/* <Flex
           flexDirection="column"
           justifyContent="flex-start"
           alignItems="flex-start"
@@ -82,7 +82,7 @@ const Index = () => {
             href="https://krishnamurti.onl/"
             icon={KrishnamurtiIcon}
           />
-        </Flex>
+        </Flex> */}
         <Timeline />
         {/* <Subscribe /> */}
       </Stack>
